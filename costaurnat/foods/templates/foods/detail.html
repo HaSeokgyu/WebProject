@@ -1,4 +1,6 @@
+{% load static %}
 <h2> {{ name }}</h2>
-<div>주머니가 가벼운 당신의 마음까지 생각한 가격 !</div>
-<div>12000</div>
+<div>{{ description }}</div>
+<div>{{ price }}</div>
+<img src={% get_static_prefix %}{{img_path}}>
 <a href="/foods/index"> 돌아가기 </a>
